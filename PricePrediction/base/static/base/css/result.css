@@ -1,0 +1,88 @@
+/* result.css */
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.result-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    width: 400px;
+    margin-top: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 12px;
+}
+
+strong {
+    font-weight: bold;
+    color: #555;
+}
+
+h2 {
+    margin-bottom: 16px;
+    color: #333;
+}
+
+p {
+    margin: 0;
+    color: #333;
+}
+
+/* Additional Styles for Attractiveness */
+
+.result-container {
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+.result-header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.result-list {
+    padding: 16px;
+}
+
+.result-item {
+    background-color: #f8f9fa;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+
+.result-label {
+    font-weight: bold;
+    color: #555;
+}
+
+.result-value {
+    color: #007bff;
+    font-weight: bold;
+}

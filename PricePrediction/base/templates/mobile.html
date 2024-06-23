@@ -1,0 +1,101 @@
+
+{% extends 'base.html' %}
+{% load static %}
+      {% block interface %}
+      
+      
+
+<form action="/result_mobile/" method="post" class=" mb-2 form-animation  container  justify-content-center align-items-center position-relative">
+  {%csrf_token%}
+    <div class=" glass container position-relative">
+        
+        <div class="sidebar "data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"></div>
+        <div class="w-100">
+        <header class="pb-3">
+          <h2 class="text-white pt-4 text-center">Mobile Data Values</h2>
+        </header>
+
+        
+        <div class="  ">
+            <div class="d-flex justify-content-center">
+            <div class="set_width ">
+          <div class="divider mb-3"></div>
+          <div>
+        
+        <label for="weight">Weight:</label>
+        <input type="text" id="weight" name="weight" class="text-white" required><br><br>
+
+
+        <label for="resolution">Resolution:</label>
+        <input type="text" id="resolution" name="resolution" class="text-white" required><br><br>
+
+        <label for="ppi">PPI:</label>
+        <input type="text" id="ppi" name="ppi" class="text-white" required><br><br>
+
+        <label for="cpu_core">Cpu Core:</label>
+        <select id="cpu_core" name="cpu_core" required>
+            <option value="2">2</option>
+            <option value="4">4</option>
+            <option value="6">6</option>
+            <option value="8">8</option>
+            <option value="12">12 or more</option>
+        </select><br><br>
+
+        <label for="cpu_freq">Cpu Freq:</label>
+        <input type="text" id="cpu_freq" name="cpu_freq" class="text-white" required><br><br>
+
+        <label for="internal_mem">Internal Memory:</label>
+        <select id="internal_mem" name="internal_mem" required>
+            <option value="4">4</option>
+            <option value="8">8</option>
+            <option value="16">16</option>
+            <option value="32">32</option>
+            <option value="64">64 or more</option>
+        </select><br><br>
+
+        <label for="ram">RAM:</label>
+        <select id="ram" name="ram" required>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="4">4</option>
+            <option value="6">6</option>
+            <option value="8">8 or more</option>
+        </select><br><br>
+
+        <label for="front_camera">Front Camera:</label>
+        <input type="text" id="front_camera" name="front_camera" class="text-white" required><br><br>
+
+        <label for="battery">Battery:</label>
+        <input type="text" id="battery" name="battery" class="text-white" required><br><br>
+
+        <label for="thickness">Thickness:</label>
+        <input type="text" id="thickness" name="thickness" class="text-white" required><br><br>
+        <div>
+
+        </div>
+        <div class="d-flex justify-content-center ">
+
+            <button type="submit" class="submit-btn">Submit</button>
+        </div>
+    </div>
+    
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+      
+      
+    
+</form>
+
+          
+
+
+
+
+
+    
+    {% endblock %}
+    

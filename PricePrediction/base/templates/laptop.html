@@ -1,0 +1,83 @@
+
+{% extends 'base.html' %}
+{% load static %}
+      {% block interface %}
+      
+      
+
+<form action="/result/" method="post" class=" mb-2 form-animation  container mt-2  justify-content-center align-items-center position-relative">
+  {%csrf_token%}
+    <div class=" glass container pb-4 position-relative">
+      <div class="sidebar "data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"></div>
+      <div class="w-100">
+        <header class="pb-3">
+          <h2 class="text-white pt-5 text-center">Laptop Data Values</h2>
+        </header>
+
+        
+        <div class="  ">
+            <div class="d-flex justify-content-center">
+            <div class="set_width ">
+          <div class="divider mb-3"></div>
+          <div>
+        
+            <label for="brand">Brand:</label>
+            <input type="text" id="brand" name="brand" class="text-white" required><br><br>
+    
+    
+            <label for="processor">Processor:</label>
+            <input type="text" id="processor" name="processor" class="text-white" required><br><br>
+    
+            <label for="operating_system">Operating System:</label>
+            <input type="text" id="operating_system" name="operating_system" class="text-white" required><br><br>
+    
+    
+    
+            <label for="storage">Storage:</label>
+            <select id="storage" name="storage" required>
+                <option value="128GB">128GB</option>
+                <option value="256GB">256GB</option>
+                <option value="512GB">512GB</option>
+                <option value="1TB">1TB</option>
+            </select><br><br>
+    
+            <label for="ram">RAM:</label>
+            <select id="ram" name="ram" required>
+                <option value="4GB">4GB</option>
+                <option value="8GB">8GB</option>
+                <option value="16GB">16GB</option>
+                <option value="32GB">32GB</option>
+            </select><br><br>
+            <label for="screen_size">Screen Size:</label>
+            <input type="text" id="screen_size" name="screen_size" class="text-white" required><br><br>
+            <label for="touch_screen">Touch Screen:</label>
+            <select id="touch_screen" name="touch_screen" required>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select><br><br>
+        <div class="d-flex justify-content-center ">
+
+            <button type="submit" class="submit-btn">Submit</button>
+        </div>
+    </div>
+    
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+      
+      
+    
+</form>
+
+          
+
+
+
+
+
+    
+    {% endblock %}
+    

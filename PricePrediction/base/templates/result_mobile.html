@@ -1,0 +1,82 @@
+
+{% extends 'base.html' %}
+{% load static %}
+      {% block interface %}
+      
+      
+
+<form action="/" method="post" class=" mb-2 form-animation container  justify-content-center align-items-center position-relative">
+  {%csrf_token%}
+    <div class=" glass container position-relative">
+        
+        <div class="sidebar "data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"></div>
+        <div class="w-100">
+        <header class="pb-3">
+          <h2 class="text-white pt-4 text-center">Features Selected:</h2>
+        </header>
+
+        
+        <div class="  ">
+            <div class="d-flex justify-content-center">
+            <div class="set_width ">
+          <div class="divider mb-3"></div>
+          <div>
+        
+            <ul>
+                <li><strong>Weight:</strong> {{ values.0 }}</li>
+                <li><strong>Resolution:</strong> {{ values.1 }}</li>
+                <li><strong>PPI:</strong> {{ values.2 }}</li>
+                <li><strong>CPU Core:</strong> {{ values.3 }}</li>
+                <li><strong>CPU Frequency:</strong> {{ values.4 }}</li>
+                <li><strong>Internal Memory:</strong> {{ values.5 }}</li>
+                <li><strong>RAM:</strong> {{ values.6 }}</li>
+                <li><strong>Front Camera:</strong> {{ values.7 }}</li>
+                <li><strong>Battery:</strong> {{ values.8 }}</li>
+                <li><strong>Thickness:</strong> {{ values.9 }}</li>
+            </ul>
+            <div class="divider mb-3"></div>
+            {% if predicted_price %}
+                <h2 class="text-white text-center">Predicted Price:</h2>
+                <p class="text-center">{{ predicted_price.0 }} Pkr</p>
+            {% endif %}
+    </div>
+    
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+      
+      
+    
+</form>
+
+          
+
+
+
+
+
+    
+    {% endblock %}
+    
+
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price Prediction Result</title>
+    <link rel="stylesheet" href="{% static 'base/css/result.css' %}">
+</head>
+<body>
+    <h1>Price Prediction Result</h1>
+    <div class="result-container">
+        <h2>Features Selected:</h2>
+        
+    </div>
+</body>
+</html>

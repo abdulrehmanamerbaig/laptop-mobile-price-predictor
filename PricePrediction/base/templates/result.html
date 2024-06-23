@@ -1,0 +1,60 @@
+
+{% extends 'base.html' %}
+{% load static %}
+      {% block interface %}
+      
+      
+
+<form action="/" method="post" class=" mb-2 form-animation container  justify-content-center align-items-center position-relative">
+  {%csrf_token%}
+    <div class=" glass container position-relative">
+        
+        <div class="sidebar "data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"></div>
+        <div class="w-100">
+        <header class="pb-3">
+          <h2 class="text-white pt-4 text-center">Features Selected:</h2>
+        </header>
+
+        
+        <div class="  ">
+            <div class="d-flex justify-content-center">
+            <div class="set_width ">
+          <div class="divider mb-3"></div>
+          <div>
+        
+            <ul>
+                <li><strong>Brand:</strong> {{ query_data.Brand.0 }}</li>
+                <li><strong>Operating System:</strong> {{ values.0 }}</li>
+                <li><strong>Processor:</strong> {{ query_data.Processor.0 }}</li>
+                <li><strong>Storage:</strong> {{ query_data.Storage.0 }} GB</li>
+                <li><strong>RAM:</strong> {{ query_data.RAM.0 }} GB</li>
+                <li><strong>Screen Size:</strong> {{ values.1 }} inches</li>
+                <li><strong>Touch Screen:</strong> {{ query_data.Touch_Screen.0 }}</li>
+            </ul>
+            <div class="divider mb-3"></div>
+            {% if predicted_price %}
+                <h2 class="text-center text-white">Predicted Price:</h2>
+                <p class="text-center">{{ predicted_price.0 }} Pkr</p>
+            {% endif %}
+    </div>
+    
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+      
+      
+    
+</form>
+
+          
+
+
+
+
+
+    
+    {% endblock %}
+    
